@@ -53,7 +53,7 @@ const addCourseCard = (videolink,title,time,price)=>{
     cardContainer.append(card)
     
 }
-
+addCourseCard('https://youtu.be/PkZNo7MFNFg', 'Curso completo JavaScript','6 HORAS')
 addCourseCard('https://youtu.be/pQN-pnXPaVg', 'Curso completo HTML5','2 HORAS')
 addCourseCard('https://youtu.be/1Rs2ND1ryYc' , 'Curso completo CSS3' , '6 horas' )
 addCourseCard('https://youtu.be/rfscVS0vtbw' , 'Curso completo Python 3 ' , '4.5 horas')

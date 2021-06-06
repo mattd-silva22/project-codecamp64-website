@@ -28,9 +28,22 @@ header {
     
 }
 
-button.hamburger {
+#hambtn {
     display: none;
 }
+
+.hambtn-bar {
+    width: 37px;
+    height: 3px;
+    background-color: white;
+    margin: 7px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+
+
+
 
 #header-container {
     display: flex;
@@ -99,6 +112,8 @@ section#banner-area {
 
 }
 
+
+
 #banner-text-box-left {
     width: 70%;
 }
@@ -161,18 +176,33 @@ section#cards {
     margin: 5px 15px 30px 15px;
 }
 
+#cards-text-box-title {
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
 .card {
     border: 1px solid black;
     width: 28%;
     height: 350px;
     min-width: 250px;
-    background-color: #7758C0;
+    background-color: rgba(119, 88, 192, 1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     color: white;
     margin: 15px;
+    transition: all .2s ease-in-out;
+
+    transform: scale(0.9)
+}
+
+.card:hover {
+    transform: scale(1);
 }
 
 .card a {
@@ -226,6 +256,10 @@ section#cards {
 
 .card-price {
     text-transform: uppercase;
+}
+
+.card-border:nth-child(1) {
+    background-color: rgba(158, 134, 214, 0.9)
 }
 .card-border:nth-child(2) {
     background-color: rgba(133, 221, 51, 0.9);
@@ -376,9 +410,11 @@ form {
     }
     
 
-    button.hamburger {
-        display: flex;
+    #hambtn {
+        display: inline;
     }
+
+
 
     #bootcamp-container {
         display: flex;
